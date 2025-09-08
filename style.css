@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f8d7dd, #fce8eb); /* gradasi pink pastel */
+  color: #2c2c54;
+}
+
+/* ===== HERO HEADER ===== */
+.hero-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f9b6c1, #f8d7dd, #fff0f5);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.title-box .year {
+  font-size: 18px;
+  color: #b76e79;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  letter-spacing: 5px;
+  color: #d96c88;
+  margin: 0;
+}
+
+.welcome {
+  font-size: 18px;
+  color: #b76e79;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+/* ===== Foto karakter ===== */
+.character{
+border: 6px solid #f19bb6;
+width: 500px;
+  height: 180spx;
+  border-radius: 45%;
+}
+
+.character img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-top: 20px;
+  
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== INTRO SECTION (nama + role) ===== */
+.intro-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.typing-text {
+  font-size: 20px;
+  color: #888;
+  margin: 0;
+  border-right: 3px solid #888;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(12, end) forwards, blink 0.6s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 180px }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c2c54;
+  margin: 10px 0;
+  font-family: 'Brush Script MT', cursive;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.roles {
+  margin-top: 10px;
+}
+
+#role {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #a686e7;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
