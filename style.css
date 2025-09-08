@@ -486,4 +486,59 @@ body {
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: bold;
+} 
+
+.character-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.character-hole {
+  width: 400px;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.character-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character {
+  position: relative;
+  width: 250px; /* sesuaikan ukuran gambar */
+}
+
+.character .eyes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.character .eyes.closed {
+  opacity: 0; /* default: mata tertutup hilang */
+}
+
+.hand {
+  width: 120px;
+}
+
+a {
+  text-decoration: none; /* hilangkan garis bawah */
+  color: inherit; /* biar ikut warna teks biasa */
+}
+
+a:hover {
+  color: #a86cd6; /* kalau di-hover ganti ke ungu pastel misalnya */
 }
